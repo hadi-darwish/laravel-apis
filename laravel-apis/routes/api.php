@@ -3,6 +3,7 @@
 use App\Http\Controllers\numberController;
 use App\Http\Controllers\numToBinaryController;
 use App\Http\Controllers\operationController;
+use App\Http\Controllers\sortController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
