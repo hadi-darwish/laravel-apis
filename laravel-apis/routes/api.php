@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\numberController;
 use App\Http\Controllers\numToBinaryController;
+use App\Http\Controllers\operationController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -10,6 +11,7 @@ Route::group(['prefix' => "v1"], function () {
 
     Route::get("/num/{number}", [numberController::class, 'getArray']);
     Route::post("/binary", [numToBinaryController::class, 'getResult']);
+    Route::post("/operation", [operationController::class, 'getResult']);
 });
 
 
