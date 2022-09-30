@@ -12,6 +12,7 @@ Route::group(['prefix' => "v1"], function () {
     Route::get("/num/{number}", [numberController::class, 'getArray']);
     Route::post("/binary", [numToBinaryController::class, 'getResult']);
     Route::post("/operation", [operationController::class, 'getResult']);
+    Route::post("/sort", [sortController::class, 'getResult']);
 });
 
 
